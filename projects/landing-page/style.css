@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+h4 {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: lighter;
+}
+
+header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #1F2937;
+
+}
+
+nav {
+    display: flex;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100px;
+}
+
+.section-2 {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-2 .intro {
+
+}
+
+.section-2 .placeholder-image {
+    background-color: gray;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-3 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-3 h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-3 .information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-3 .box {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.section-3 p {
+    width: 100px;
+    text-align: center;
+}
+
+.section-4 {
+    padding: 5rem;
+    background-color: #E5E7EB;
+    }
+
+.section-4 h2 {
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.section-4 h3 {
+    color: #1F2937;
+    text-align: right;
+}
+
+.section-5 {
+    padding: 5rem;
+}
+
+.section-5 .action {
+    background-color: #3882F6;
+    display: flex;
+    padding: 2rem;
+}
+
+.section-5 button {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
