@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+
+            <input class="inputBar"></input>
+
+            <button type="button" class="clearButton" onClick="clearInput()">Clear</button>
+
+            <div class="buttons">
+
+
+                <div class="numberButtons"></div>
+
+                <div class="operationButtons">
+                    <button type="button" class="operationButton" name="div" onClick="updateInputString('/')">/</button>
+                    <button type="button" class="operationButton" name="mult" onClick="updateInputString('x')">x</button>
+                    <button type="button" class="operationButton" name="sub" onClick="updateInputString('-')">-</button>
+                    <button type="button" class="operationButton" name="add" onClick="updateInputString('+')">+</button>
+                    <button type="button" class="operationButton" name="eq" onClick="operate()">=</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
