@@ -1,0 +1,49 @@
+@font-face { font-family: norse-bold; src: url("fonts/Norse-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-family: norse-bold, sans-serif;
+    font-size: 6em;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/forest-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.title-banner {
+    padding: 20px 0 20px 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+.odin-logo {
+    height: 125px;
+    width: auto;
+}
+
+.right {
+    margin-left: 100px;
