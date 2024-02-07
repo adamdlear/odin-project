@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     display: flex;
 }
@@ -14,6 +15,23 @@ body {
 h1 {
     font-family: norse-bold, sans-serif;
     font-size: 6em;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 25px;
+}
+
+fieldset {
+    display: flex;
+    border-style: none;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 .container {
@@ -46,4 +64,17 @@ h1 {
 }
 
 .right {
-    margin-left: 100px;
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 50px;
+    background-color: #f9fafb;
+}
+
+.top {
+    padding-bottom: 50px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
