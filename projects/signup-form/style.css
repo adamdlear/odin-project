@@ -1,80 +1,108 @@
-@font-face { font-family: norse-bold; src: url("fonts/Norse-Bold.otf");
+@font-face {
+  font-family: norse-bold;
+  src: url("fonts/Norse-Bold.otf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
-    display: flex;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
 }
 
 h1 {
-    font-family: norse-bold, sans-serif;
-    font-size: 6em;
+  font-family: norse-bold, sans-serif;
+  font-size: 6em;
 }
 
 p {
-    font-size: 1.25em;
-    font-weight: bold;
-    margin: 25px;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-bottom: 25px;
 }
 
 fieldset {
-    display: flex;
-    border-style: none;
+  display: flex;
+  border-style: none;
 }
 
 input {
-    border-color: #E5E7EB;
-    border-width: 1px;
-    border-radius: 5px;
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  background-color: #596d48;
+  padding: 6px 15px 6px 15px;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    background-image: url("images/forest-background.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
+  width: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/forest-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
 }
 
 .title-banner {
-    padding: 20px 0 20px 0;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 150px;
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
 }
 
 .odin-logo {
-    height: 125px;
-    width: auto;
+  height: 125px;
+  width: auto;
 }
 
-.right {
-    padding-top: 100px;
-    padding-right: 200px;
-    padding-left: 50px;
-    background-color: #f9fafb;
+.main {
+  width: 0 1 60%;
+  padding-top: 100px;
+  position: relative;
+  background-color: #f9fafb;
 }
 
 .top {
-    padding-bottom: 50px;
+  padding-right: 200px;
+  padding-left: 75px;
+  padding-bottom: 25px;
+}
+
+.middle {
+  padding: 25px 200px 25px 75px;
+  background-color: white;
+    box-shadow: bottom;
+}
+
+.bottom {
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-left: 75px;
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

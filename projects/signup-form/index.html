@@ -7,62 +7,62 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="left">
-                <div class="title-banner">
-                    <img src="images/odin-lined.png" alt="" class="odin-logo">
-                    <h1>ODIN</h1>
-                </div>
+        <aside class="left">
+            <div class="title-banner">
+                <img src="images/odin-lined.png" alt="" class="odin-logo">
+                <h1>ODIN</h1>
             </div>
+        </aside>
 
-            <div class="right">
-                <section class="top">
-                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-                    <p>You <em>know</em> you want to.</p>
-                </section>
+        <div class="main">
+            <section class="top">
+                <p>This is not a real online service! 
+                   You know you need something like this in your life to help you realize your deepest dreams.
+                   Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </section>
 
-                <section class="middle">
-                    <p>Let's do this!</p>    
-                    <form id="personal-info">
-                        <fieldset class="form-row">
-                            <div class="form-field">
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="first-name" value="">
-                            </div>
-                            <div class="form-field">
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="last-name" value="">
-                            </div>
-                        </fieldset>
-                        <fieldset class="form-row">
-                            <div class="form-field">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" value="">
-                            </div>
-                            <div class="form-field">
-                                <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" name="phone" value="">
-                            </div>
-                        </fieldset>
-                        <fieldset class="form-row">
-                            <div class="form-field">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" value="">
-                                <span id="password-span"></span>
-                            </div>
-                            <div class="form-field">
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password name="confirm-password" value="">
-                            </div>
-                        </fieldset>
-                    </form>
-                </section>
+            <section class="middle">
+                <p>Let's do this!</p>    
+                <form id="personal-info">
+                    <fieldset class="form-row">
+                        <div class="form-field">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" value="">
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" value="">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-row">
+                        <div class="form-field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" value="">
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" value="">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-row">
+                        <div class="form-field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" value="">
+                            <span id="password-span"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" value="">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
 
-                <section class="bottom">
-                    <button type="button" form="personal-info"></button>                    
-                </section>
-            </div>
-
+            <section class="bottom">
+                <button type="submit" form="personal-info">Create Account</button>                    
+            </section>
         </div>
     </body>
 </html>
