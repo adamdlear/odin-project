@@ -1,35 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="calculator">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen">
+        <div class="screenLast"></div>
+        <div class="screenCurrent">0</div>
+      </div>
 
-            <input class="inputBar"></input>
+      <button type="button" class="clearButton" onclick="this.blur()">
+        Clear
+      </button>
+      <button type="button" class="deleteButton" onclick="this.blur()">
+        Delete
+      </button>
 
-            <button type="button" class="clearButton" onClick="clearInput()">Clear</button>
-
-            <div class="buttons">
-
-
-                <div class="numberButtons"></div>
-
-                <div class="operationButtons">
-                    <button type="button" class="operationButton" name="div" onClick="updateInputString('/')">/</button>
-                    <button type="button" class="operationButton" name="mult" onClick="updateInputString('x')">x</button>
-                    <button type="button" class="operationButton" name="sub" onClick="updateInputString('-')">-</button>
-                    <button type="button" class="operationButton" name="add" onClick="updateInputString('+')">+</button>
-                    <button type="button" class="operationButton" name="eq" onClick="operate()">=</button>
-                </div>
-
-            </div>
-
+      <div class="buttons">
+        <div class="numberButtons">
+          <button type="button" class="numberButton" onclick="this.blur()">7</button>
+          <button type="button" class="numberButton" onclick="this.blur()">8</button>
+          <button type="button" class="numberButton" onclick="this.blur()">9</button>
+          <button type="button" class="numberButton" onclick="this.blur()">4</button>
+          <button type="button" class="numberButton" onclick="this.blur()">5</button>
+          <button type="button" class="numberButton" onclick="this.blur()">6</button>
+          <button type="button" class="numberButton" onclick="this.blur()">1</button>
+          <button type="button" class="numberButton" onclick="this.blur()">2</button>
+          <button type="button" class="numberButton" onclick="this.blur()">3</button>
+          <button type="button" class="numberButton" onclick="this.blur()">.</button>
+          <button type="button" class="numberButton" onclick="this.blur()">0</button>
+          <button type="button" class="numberButton" onclick="this.blur()">00</button>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="operationButtons">
+          <button type="button" class="operationButton" name="div" onclick="this.blur()">/</button>
+          <button type="button" class="operationButton" name="mult" onclick="this.blur()">x</button>
+          <button type="button" class="operationButton" name="sub" onclick="this.blur()">-</button>
+          <button type="button" class="operationButton" name="add" onclick="this.blur()">+</button>
+          <button type="button" class="operationButton" name="eq" onclick="this.blur()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
