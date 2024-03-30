@@ -1,7 +1,9 @@
+const tableBody = document.querySelector(".shelfBody");
+
 const myLibrary = [];
 
-function Book(title, author, pages, read) {
-    // this.image = image;
+function Book(image, title, author, pages, read) {
+    this.image = image;
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -9,9 +11,12 @@ function Book(title, author, pages, read) {
 }
 
 function addBookToLibrary() {
-    const tableBody = document.querySelector(".shelfBody");
     myLibrary.forEach((book) => {
         const row = document.createElement("tr");
+
+        const image = document.createElement("img");
+        image.classList.add("bookCover")
+        image.src = book.image;
 
         const title = document.createElement("td");
         title.textContent = book.title;
@@ -29,21 +34,20 @@ function addBookToLibrary() {
         read.textContent = book.read;
         // row.appendChild(read);
 
-        row.append(title, author, pages, read);
+        row.append(image, title, author, pages, read);
         tableBody.append(row);
-        console.log(row);
     });
 }
 
 const testBook = new Book(
-    // "imagestring",
+    "images/martian.webp",
     "This Test Book",
     "Test Author",
     100,
     "Yes",
 );
 const testBook1 = new Book(
-    // "imagestring",
+    "imagestring",
     "This Test Book",
     "Test Author",
     100,
@@ -51,6 +55,6 @@ const testBook1 = new Book(
 );
 
 myLibrary.push(testBook);
-myLibrary.push(testBook1);
+// myLibrary.push(testBook1);
 
 addBookToLibrary();
