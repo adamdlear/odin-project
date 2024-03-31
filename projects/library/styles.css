@@ -1,8 +1,15 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
 }
 
 table {
@@ -18,7 +25,30 @@ td {
     padding: 15px;
 }
 
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button {
+    font-size: 2rem;
+    padding: 12px;
+    border-radius: 4px;
+}
+
 .bookCover {
     width: 10vw;
     height: auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
 }
